@@ -8,7 +8,7 @@ class Get_data:
   def __init__(self,URL):
     self.url = URL
 
-  def get_element(self,element: str)#属性のみ参照する場合
+  def get_element(self,element: str):#属性のみ参照する場合
     self.element = element
     url = requests.get(self.url,timeout=4)
     soup = BeautifulSoup(url.text,"html.parser")
